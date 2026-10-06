@@ -1,0 +1,4 @@
+Coloca aquí los archivos reales del proyecto:
+- logosena.png
+- laiacarita.png
+No se han inventado ni sustituido estos recursos.

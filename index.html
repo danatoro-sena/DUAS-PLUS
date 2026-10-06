@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#00a859">
+  <meta name="description" content="DUAS+ — Presentación interactiva de accesibilidad, IA y aprendizaje adaptativo.">
+  <title>DUAS+ | El aprendizaje se adapta a ti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+  <div class="grain"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="DUAS+ inicio"><span class="brand-mark">D+</span><span>DUAS<span>+</span></span></a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#problema">Problema</a><a href="#datos">Datos</a><a href="#solucion">Solución</a><a href="#laia">LAIA</a><a href="#acceso">Acceso</a><a href="#impacto">Impacto</a>
+    </nav>
+    <button
+  class="icon-btn"
+  id="themeBtn"
+  aria-label="Cambiar entre modo claro y oscuro"
+  title="Cambiar tema"
+>
+  <i data-lucide="sun-moon"></i>
+</button>
+<button class="menu-btn" id="menuBtn" aria-label="Abrir menú" title="Abrir menú"><i data-lucide="menu"></i></button></div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu"><a href="#problema">Problema</a><a href="#datos">Datos</a><a href="#solucion">Solución</a><a href="#laia">LAIA</a><a href="#acceso">Acceso</a><a href="#impacto">Impacto</a></div>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse"></span> DUA + SENA + PLUS</div>
+        <h1>El aprendizaje<br><span>se adapta a ti.</span></h1>
+        <p class="hero-text">Una plataforma inteligente de accesibilidad universal que transforma la experiencia educativa según las necesidades de cada aprendiz.</p>
+        <div class="qr-card" id="qrCard">
+          <div class="qr-wrap"><img id="qrImage" alt="Código QR para abrir DUAS+ en otro dispositivo"></div>
+          <div><strong>¿Quieres verlo desde tu celular?</strong><p id="qrHelp">Escanea este QR para abrir esta presentación desde tu celular.</p><button class="text-btn" id="copyUrl">Copiar enlace</button><small class="qr-status" id="qrStatus">Preparando QR público…</small></div>
+        </div>
+      </div>
+      <div class="hero-stage reveal delay-2" aria-label="Vista conceptual de DUAS+">
+        <div class="orb orb-a"></div><div class="orb orb-b"></div>
+        <div class="laia-float logo-float" aria-label="Logo del SENA"><div class="laia-ring"></div><div class="sena-logo-wrap"><img src="assets/images/logosena.png" alt="Logo SENA" onerror="this.style.display='none';this.parentElement.classList.add('asset-missing')"><span class="asset-fallback">SENA</span></div><div class="laia-name">SENA · DUAS+</div></div>
+        <div class="glass-card card-one">
+  <span class="mini-icon">
+    <i data-lucide="accessibility"></i>
+  </span>
+  <strong>Accesibilidad</strong>
+  <small>Adaptación en tiempo real</small>
+</div>
+        <div class="glass-card card-two"><span class="mini-icon"><i data-lucide="sparkles"></i></span><strong>IA integrada</strong><small>Aprender · acompañar · crear</small></div>
+        <div class="glass-card card-three"><span class="mini-icon"><i data-lucide="type"></i></span><strong>Experiencia personal</strong><small>El sistema se transforma</small></div>
+      </div>
+    </section>
+
+    <section class="section dark-story" id="problema">
+      <div class="center reveal problem-statement"><span class="eyebrow">01 · EL PROBLEMA</span><h2>No es la persona la que debe adaptarse al sistema.<br><span>Es el sistema el que debe adaptarse a la persona.</span></h2><p>Todos aprendemos de maneras diferentes. Cuando una plataforma no contempla esas diferencias, una barrera digital puede convertirse en una barrera educativa.</p></div>
+      <div class="problem-grid reveal">
+        <article><b>“No puedo leer bien.”</b><span>Texto pequeño, fuentes complejas o poco contraste.</span></article>
+        <article><b>“No puedo escuchar.”</b><span>El contenido necesita subtítulos, transcripción o señas.</span></article>
+        <article><b>“Me pierdo con tantas instrucciones.”</b><span>Necesito pasos claros, listas y menos carga cognitiva.</span></article>
+        <article><b>“Los colores me confunden.”</b><span>El color no debería ser la única forma de comunicar información.</span></article>
+        <article><b>“No puedo usar el teclado.”</b><span>La interacción debe ofrecer alternativas.</span></article>
+        <article><b>“El sistema me genera ansiedad.”</b><span>Menos interrupciones, más control y un modo calma.</span></article>
+      </div>
+    </section>
+
+    <section class="section data-section" id="datos">
+      <div class="section-heading reveal"><div><span class="eyebrow">02 · COLOMBIA EN CIFRAS</span><h2>Los datos también<br><span>cuentan historias.</span></h2></div><p>No son solo números: muestran la dimensión de las barreras y por qué una experiencia educativa adaptable importa.</p></div>
+      <div class="stats-dashboard reveal">
+
+  <!-- CARD 1 -->
+  <article class="chart-card chart-main">
+
+    <div class="chart-top">
+      <div>
+        <span class="chart-kicker">DANE · diferentes mediciones</span>
+        <h3>La magnitud de la discapacidad en Colombia</h3>
+      </div>
+
+      <span class="source-badge">1,76 — 3,1 M</span>
+    </div>
+
+    <div class="range-chart">
+
+      <div class="range-labels">
+        <span>1,76 M</span>
+        <span>3,1 M</span>
+      </div>
+
+      <div class="range-line">
+        <div class="range-progress"></div>
+
+        <span class="range-point point-low"></span>
+        <span class="range-point point-high"></span>
+      </div>
+
+      <div class="range-caption">
+        <span>Estimación inferior</span>
+        <span>Estimación superior</span>
+      </div>
+
+    </div>
+
+    <div class="chart-context">
+      <strong>¿Por qué mostramos un rango?</strong>
+
+      <p>
+        Las cifras dependen de la operación estadística
+        y de la metodología utilizada. Por eso presentamos
+        el contexto de las mediciones en lugar de convertirlas
+        en una única cifra.
+      </p>
+    </div>
+
+    <small>
+      Fuente: DANE · CNPV 2018 y documentos estadísticos
+      sobre medición de discapacidad.
+    </small>
+
+  </article>
+
+
+  <!-- CARD 2 -->
+
+  <article class="chart-card">
+
+    <div class="chart-top">
+
+      <div>
+        <span class="chart-kicker">CNPV 2018</span>
+        <h3>Asistencia a establecimientos educativos</h3>
+      </div>
+
+      <span class="source-badge">74,5%</span>
+
+    </div>
+
+    <div class="donut-modern">
+
+      <div class="donut-center">
+        <strong>74,5%</strong>
+        <span>asistía</span>
+      </div>
+
+    </div>
+
+    <div class="chart-legend">
+
+      <span>
+        <i class="legend-dot green"></i>
+        Asistía
+      </span>
+
+      <span>
+        <i class="legend-dot gray"></i>
+        Resto
+      </span>
+
+    </div>
+
+    <p>
+      Una parte importante de las personas que reportaron
+      alguna limitación ya estaba vinculada al sistema educativo.
+    </p>
+
+    <small>
+      Fuente: DANE · CNPV 2018.
+    </small>
+
+  </article>
+
+
+  <!-- CARD 3 -->
+
+  <article class="chart-card">
+
+    <div class="chart-top">
+
+      <div>
+        <span class="chart-kicker">Ministerio de Educación</span>
+        <h3>Estudiantes con discapacidad matriculados</h3>
+      </div>
+
+      <span class="source-badge">2026</span>
+
+    </div>
+
+    <div class="stat-highlight">
+
+      <strong data-count="206384">
+        206.384
+      </strong>
+
+      <span>
+        estudiantes
+      </span>
+
+    </div>
+
+    <div class="animated-bars">
+
+      <span style="--bar-height: 38%"></span>
+      <span style="--bar-height: 52%"></span>
+      <span style="--bar-height: 66%"></span>
+      <span style="--bar-height: 82%"></span>
+      <span style="--bar-height: 100%"></span>
+
+    </div>
+
+    <p>
+      La matrícula evidencia que la inclusión educativa
+      también necesita experiencias digitales accesibles.
+    </p>
+
+    <small>
+      Fuente: Ministerio de Educación Nacional ·
+      balance publicado en 2026.
+    </small>
+
+  </article>
+
+
+  <!-- CARD 4 -->
+
+  <article class="chart-card chart-comparison">
+
+    <div class="chart-top">
+
+      <div>
+        <span class="chart-kicker">CNPV 2018</span>
+        <h3>Acceso a educación superior</h3>
+      </div>
+
+      <span class="source-badge">DANE</span>
+
+    </div>
+
+    <div class="compare-values">
+
+      <div>
+        <strong>9,04%</strong>
+        <span>Mujeres con dificultades</span>
+      </div>
+
+      <div class="compare-divider">
+        VS
+      </div>
+
+      <div>
+        <strong>20,85%</strong>
+        <span>Mujeres sin dificultades</span>
+      </div>
+
+    </div>
+
+    <div class="compare-chart">
+
+      <div class="compare-row">
+        <span>Con dificultades</span>
+        <div>
+          <i style="--width:43.36%"></i>
+        </div>
+        <b>9,04%</b>
+      </div>
+
+      <div class="compare-row">
+        <span>Sin dificultades</span>
+        <div>
+          <i style="--width:100%"></i>
+        </div>
+        <b>20,85%</b>
+      </div>
+
+    </div>
+
+    <p>
+      La diferencia muestra que el acceso al sistema
+      no garantiza las mismas oportunidades educativas.
+    </p>
+
+    <small>
+      Fuente: DANE · CNPV 2018.
+    </small>
+
+  </article>
+
+</div>
+    </section>
+
+    <section class="section solution" id="solucion">
+      <div class="center reveal"><span class="eyebrow">03 · LA SOLUCIÓN</span><h2><span>D</span>UA + <span>S</span>ENA + <span>PLUS</span></h2><p>DUAS+ integra accesibilidad, inteligencia artificial y experiencia humana desde el ADN de la plataforma.</p></div>
+      <div class="pillars reveal">
+        <article><div class="pillar-number">01</div><h3>DUA</h3><p>Diseño Universal para el Aprendizaje: el contenido se adapta a las personas, no al revés.</p></article>
+        <article><div class="pillar-number">02</div><h3>SENA</h3><p>Diseñada pensando en el contexto de formación, aprendices e instructores.</p></article>
+        <article><div class="pillar-number">03</div><h3>PLUS</h3><p>IA, LAIA, accesibilidad multimodal y una experiencia digital que va más allá.</p></article>
+      </div>
+    </section>
+
+    <section class="section laia-section" id="laia">
+      <div class="laia-demo reveal">
+        <div class="laia-3d-wrap">
+          <div class="laia-halo"></div>
+          <div class="model3d-card">
+            <div class="model3d-badge">LAIA · 3D</div>
+            <div id="laia3d" class="model3d-viewer" aria-label="Modelo 3D interactivo de LAIA"></div>
+            <div class="model3d-help"><span>↔ Arrastra para girar</span><span>⌕ Rueda para zoom</span></div>
+            <div id="model3dStatus" class="model3d-status">Cargando modelo…</div>
+          </div>
+        </div>
+        <div class="laia-copy"><span class="eyebrow">04 · CONOCE A LAIA</span><h2>La tecnología<br><span>también puede acompañar.</span></h2><p>Ahora puedes explorar a LAIA en 3D. Arrastra el modelo para verlo desde diferentes ángulos y usa la rueda del mouse para acercarte.</p><div class="feature-chips"><span><i data-lucide="mic-2"></i>Voz</span><span><i data-lucide="hand"></i>Señas</span><span><i data-lucide="message-circle"></i>Chat</span><span><i data-lucide="camera"></i>Cámara</span><span><i data-lucide="sparkles"></i>IA</span></div><p class="model3d-note">El modelo se carga directamente desde los archivos del proyecto. En celular podrás tocar y arrastrar para girarlo.</p></div>
+      </div>
+    </section>
+
+    <section class="section login-section" id="acceso">
+      <div class="center reveal"><span class="eyebrow">05 · ACCESO MULTIMODAL</span><h2>Incluso entrar<br><span>puede ser diferente.</span></h2><p>Cuatro formas de iniciar sesión para que el acceso también sea parte de la inclusión.</p></div>
+      <div class="login-grid reveal"><article><b class="login-icon"><i data-lucide="mic-2"></i></b><h3>Acceso por voz</h3><p>“Mi voz es mi llave”.</p><span class="login-tag">Multimodal</span></article><article><b class="login-icon"><i data-lucide="scan"></i></b><h3>Patrón visual</h3><p>Toca puntos específicos sobre una imagen.</p><span class="login-tag">Visual</span></article><article><b class="login-icon"><i data-lucide="mail"></i></b><h3>Código por correo</h3><p>OTP de 6 dígitos sin recordar contraseñas.</p><span class="login-tag">Simple</span></article><article><b class="login-icon"><i data-lucide="keyboard"></i></b><h3>Modo clásico</h3><p>Correo, contraseña y rol.</p><span class="login-tag">Tradicional</span></article></div>
+    </section>
+
+    <section class="section instructor-section">
+      <div class="instructor-grid reveal"><div><span class="eyebrow">06 · PARA INSTRUCTORES</span><h2>La accesibilidad<br><span>también se enseña.</span></h2><p>El instructor puede gestionar aprendices, crear clases, analizar contenidos y experimentar cómo cambia la plataforma para cada perfil.</p><div class="instructor-list"><span>✓ Mis aprendices</span><span>✓ Fichas y clases</span><span>✓ Estadísticas</span><span>✓ IA para contenido accesible</span><span>✓ Experiencia DUAS+</span></div></div><div class="experience-card"><div class="exp-header"><span>Experiencia DUAS+</span><span class="live-dot">● EN VIVO</span></div><div class="exp-tabs"><b>Visual</b><span>TDAH</span><span>TEA</span><span>Dislexia</span></div><div class="exp-screen"><div class="exp-a">Aa</div><div><strong>Así podría ver la plataforma un aprendiz</strong><p>El instructor puede comprobar las adaptaciones antes de publicar su contenido.</p></div></div></div></div>
+    </section>
+
+    <section class="section ai-section">
+      <div class="center reveal"><span class="eyebrow">07 · IA QUE APORTA</span><h2>No es IA por moda.<br><span>Es IA para enseñar mejor.</span></h2></div>
+      <div class="ai-flow reveal"><div class="ai-box"><i data-lucide="file-text"></i><strong>Material educativo</strong><small>Guía, taller o presentación</small></div><div class="arrow"><i data-lucide="arrow-right"></i></div><div class="ai-box scan"><i data-lucide="sparkles"></i><strong>DUAS+ IA</strong><small>Analiza accesibilidad</small></div><div class="arrow"><i data-lucide="arrow-right"></i></div><div class="ai-results"><span><i data-lucide="check"></i> Resumen</span><span><i data-lucide="check"></i> Glosario</span><span><i data-lucide="check"></i> Flashcards</span><span><i data-lucide="check"></i> Preguntas</span><span><i data-lucide="check"></i> Descripciones</span></div></div>
+    </section>
+
+    <section class="section impact-section" id="impacto">
+      <div class="center reveal"><span class="eyebrow">08 · IMPACTO</span><h2>¿Qué pasa cuando<br><span>eliminamos una barrera?</span></h2></div>
+      <div class="impact-chain reveal"><div><b>Barrera</b><small>Una dificultad se convierte en obstáculo.</small></div><i>→</i><div><b>Acceso</b><small>La plataforma ofrece una alternativa.</small></div><i>→</i><div><b>Participación</b><small>La persona puede interactuar.</small></div><i>→</i><div class="highlight"><b>Aprendizaje</b><small>La tecnología deja de ser una barrera.</small></div></div>
+      <blockquote class="impact-quote reveal">“No intentamos que todas las personas aprendan de la misma manera.<br><strong>Buscamos que todas tengan una oportunidad real de aprender.</strong>”</blockquote>
+    </section>
+
+    <section class="section difference-section">
+      <div class="center reveal"><span class="eyebrow">09 · DIFERENCIAL</span><h2>¿Por qué<br><span>DUAS+?</span></h2></div>
+      <div class="comparison reveal"><div class="comparison-head"><span>Plataforma tradicional</span><span>DUAS+</span></div><div><span>El usuario se adapta</span><b>El sistema se adapta</b></div><div><span>Accesibilidad como complemento</span><b>Accesibilidad integrada</b></div><div><span>Un método de acceso</span><b>Voz · Patrón · OTP · Clásico</b></div><div><span>Chatbot</span><b>LAIA como acompañante</b></div><div><span>Contenido estático</span><b>Experiencia adaptable</b></div></div>
+      <div class="dna reveal"><strong>“No agregamos accesibilidad como un parche.</strong><span>La construimos desde el ADN de la plataforma.”</span></div>
+    </section>
+
+    <section class="section future-section">
+      <div class="center reveal"><span class="eyebrow">10 · POTENCIAL</span><h2>Una idea creada para el SENA.<br><span>Un potencial que puede ir más allá.</span></h2><p>El concepto puede evolucionar hacia otros contextos de formación y organizaciones que necesiten experiencias digitales más inclusivas.</p></div>
+      <div class="future-path reveal"><span>SENA</span><i>→</i><span>Instituciones</span><i>→</i><span>Universidades</span><i>→</i><span>Empresas</span><i>→</i><strong>Educación accesible</strong></div>
+    </section>
+
+    <section class="section final-section" id="final">
+      <div class="final-laia"><div class="final-laia-image"><img src="assets/images/laiacarita.png" alt="LAIA" onerror="this.style.display='none';this.parentElement.classList.add('asset-missing')"><span class="asset-fallback">LAIA</span></div></div>
+      <span class="eyebrow reveal">DUAS+</span><h2 class="reveal">El aprendizaje<br><span>no debería tener barreras.</span></h2><p class="reveal">El sistema se adapta a la persona.</p>
+      <div class="final-qr reveal"><img id="qrImageFinal" alt="QR para abrir DUAS+"><div><strong>Escanea. Explora. Vive DUAS+.</strong><button class="btn primary" id="shareBtn">Compartir DUAS+</button></div></div>
+      <small class="sources-note">Cifras: DANE y Ministerio de Educación Nacional. Ver fuentes en README.md.</small>
+    </section>
+  </main>
+
+<!-- =====================================================
+     CHATBOT LAIA
+===================================================== -->
+<button class="laia-chat-button" id="laiaChatButton" aria-label="Abrir asistente LAIA">
+  <img src="assets/images/laiacarita.png" alt="LAIA">
+  <span>Pregúntale a LAIA</span>
+</button>
+
+<div class="laia-chat" id="laiaChat" aria-hidden="true">
+
+  <div class="laia-chat-window">
+
+    <!-- ENCABEZADO -->
+    <div class="laia-chat-header">
+
+      <div class="laia-chat-identity">
+        <div class="laia-chat-avatar">
+          <img src="assets/images/laiacarita.png" alt="LAIA">
+        </div>
+
+        <div>
+          <strong>LAIA</strong>
+          <small>Asistente DUAS+</small>
+        </div>
+      </div>
+
+      <button class="laia-chat-close" id="laiaChatClose" aria-label="Cerrar chatbot">
+        <i data-lucide="x"></i>
+      </button>
+
+    </div>
+
+
+    <!-- CONTENIDO -->
+    <div class="laia-chat-body" id="laiaChatBody">
+
+      <!-- INICIO -->
+      <div class="laia-chat-welcome">
+
+        <span class="laia-chat-eyebrow">
+          ASISTENTE DUAS+
+        </span>
+
+        <h3>
+          Hola, soy LAIA.
+        </h3>
+
+        <p>
+          ¿Qué quieres saber sobre DUAS+?
+        </p>
+
+      </div>
+
+
+      <!-- CATEGORÍAS -->
+      <div class="laia-categories" id="laiaCategories">
+
+        <button class="laia-category" data-category="duas">
+          <div class="laia-category-icon">
+            <i data-lucide="book-open"></i>
+          </div>
+
+          <div>
+            <strong>Sobre DUAS+</strong>
+            <small>Conoce el proyecto</small>
+          </div>
+
+          <i data-lucide="chevron-right"></i>
+        </button>
+
+
+        <button class="laia-category" data-category="laia">
+          <div class="laia-category-icon">
+            <i data-lucide="bot"></i>
+          </div>
+
+          <div>
+            <strong>Sobre LAIA</strong>
+            <small>Conoce a nuestra asistente</small>
+          </div>
+
+          <i data-lucide="chevron-right"></i>
+        </button>
+
+
+        <button class="laia-category" data-category="tecnologia">
+          <div class="laia-category-icon">
+            <i data-lucide="monitor-smartphone"></i>
+          </div>
+
+          <div>
+            <strong>Tecnología</strong>
+            <small>¿Cómo funciona?</small>
+          </div>
+
+          <i data-lucide="chevron-right"></i>
+        </button>
+
+
+        <button class="laia-category" data-category="accesibilidad">
+          <div class="laia-category-icon">
+            <i data-lucide="accessibility"></i>
+          </div>
+
+          <div>
+            <strong>Accesibilidad</strong>
+            <small>Conoce las alternativas</small>
+          </div>
+
+          <i data-lucide="chevron-right"></i>
+        </button>
+
+      </div>
+
+
+      <!-- PREGUNTAS -->
+      <div class="laia-questions" id="laiaQuestions">
+
+        <button class="laia-back" id="laiaBackCategories">
+          <i data-lucide="arrow-left"></i>
+          Volver a categorías
+        </button>
+
+        <span class="laia-question-category" id="laiaQuestionCategory"></span>
+
+        <div class="laia-question-list" id="laiaQuestionList"></div>
+
+      </div>
+
+
+      <!-- RESPUESTA -->
+      <div class="laia-answer" id="laiaAnswer">
+
+        <button class="laia-back" id="laiaBackQuestions">
+          <i data-lucide="arrow-left"></i>
+          Volver a preguntas
+        </button>
+
+        <div class="laia-user-question">
+          <span>Tú</span>
+          <p id="laiaSelectedQuestion"></p>
+        </div>
+
+        <div class="laia-response">
+
+          <div class="laia-response-avatar">
+            <img src="assets/images/laiacarita.png" alt="LAIA">
+          </div>
+
+          <div>
+            <span>LAIA</span>
+            <p id="laiaAnswerText"></p>
+          </div>
+
+        </div>
+
+        <div class="laia-more">
+          <p>¿Quieres saber algo más?</p>
+
+          <button id="laiaMoreQuestions">
+            Ver otra pregunta
+            <i data-lucide="arrow-right"></i>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>/* Opcional: para fijar una URL pública concreta, define window.DUAS_PUBLIC_URL antes de app.js. Si no se define, DUAS+ usa automáticamente la URL pública donde esté alojado. */</script>
+  <script type="importmap">{
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+    }
+  }</script>
+  <script type="module" src="js/laia-3d.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
